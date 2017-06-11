@@ -1,0 +1,25 @@
+<list>
+  <Reader>
+    <name>Maciej</name>
+    <surname>Brodecki</surname>
+    <id>1</id>
+    <penalty>0.0</penalty>
+    <loaned>
+      <Book>
+        <id>1</id>
+        <author>Tuwim</author>
+        <title>Bajki</title>
+        <available>false</available>
+        <date>
+          <iMillis>1435672105343</iMillis>
+          <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology-Stub" serialization="custom">
+            <org.joda.time.chrono.ISOChronology-Stub>
+              <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone-Stub"/>
+            </org.joda.time.chrono.ISOChronology-Stub>
+          </iChronology>
+        </date>
+        <reader reference="../../.."/>
+      </Book>
+    </loaned>
+  </Reader>
+</list>

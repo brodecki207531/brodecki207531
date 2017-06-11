@@ -1,0 +1,67 @@
+<list>
+  <Book>
+    <id>1</id>
+    <author>Tuwim</author>
+    <title>Bajki</title>
+    <available>false</available>
+    <date>
+      <iMillis>1435672105371</iMillis>
+      <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology-Stub" serialization="custom">
+        <org.joda.time.chrono.ISOChronology-Stub>
+          <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone-Stub"/>
+        </org.joda.time.chrono.ISOChronology-Stub>
+      </iChronology>
+    </date>
+    <reader>
+      <name>Maciej</name>
+      <surname>Brodecki</surname>
+      <id>1</id>
+      <penalty>0.0</penalty>
+      <loaned>
+        <Book reference="../../.."/>
+      </loaned>
+    </reader>
+  </Book>
+  <Book>
+    <id>2</id>
+    <author>Brzechwa</author>
+    <title>Bajkełę</title>
+    <available>true</available>
+  </Book>
+  <NewsPaper>
+    <name>Wyborcza</name>
+    <number>1</number>
+    <id>1</id>
+    <available>true</available>
+  </NewsPaper>
+  <Magazine>
+    <name>Cd-Action</name>
+    <number>1</number>
+    <id>1</id>
+    <available>true</available>
+  </Magazine>
+  <Book>
+    <id>3</id>
+    <author>Grebosz</author>
+    <title>Symfonia C++</title>
+    <available>true</available>
+  </Book>
+  <Magazine>
+    <name>Moda24</name>
+    <number>5</number>
+    <id>2</id>
+    <available>true</available>
+  </Magazine>
+  <NewsPaper>
+    <name>Fakt</name>
+    <number>214</number>
+    <id>2</id>
+    <available>true</available>
+  </NewsPaper>
+  <Book>
+    <id>4</id>
+    <author>Ksiazka autor</author>
+    <title>ksiazka tytul</title>
+    <available>true</available>
+  </Book>
+</list>
