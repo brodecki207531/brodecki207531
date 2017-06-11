@@ -13,7 +13,6 @@ import org.junit.Test;
 import org.assertj.core.api.Condition;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.anyCollection;
 import static org.mockito.Matchers.anyString;
@@ -37,21 +36,21 @@ public class ReaderTest {
 	public void initializeSUT() {
 		sut = new Reader("Jan", "Kowalski");
 	}
-	
-	@Test
-	public void shouldReturnProperListAfterLoan() throws TooManyLoansException {
-		//given
-		//when
-		Book testBook = new Book("autor2","tytuł2");
-		sut.addLoan(new Book("autor","tytuł"));
-		sut.addLoan(testBook);
-		//then
-		assertThat(sut.getLoaned())
-			.hasSize(2)
-			.contains(testBook)
-			.doesNotContainNull();	
-	}
-	
+
+	// @Test
+	// public void shouldReturnProperListAfterLoan() throws TooManyLoansException {
+	// 	//given
+	// 	//when
+	// 	Book testBook = new Book("autor2","tytuł2");
+	// 	sut.addLoan(new Book("autor","tytuł"));
+	// 	sut.addLoan(testBook);
+	// 	//then
+	// 	assertThat(sut.getLoaned())
+	// 		.hasSize(2)
+	// 		.contains(testBook)
+	// 		.doesNotContainNull();
+	// }
+
 	@Test(expected=TooManyLoansException.class)
 	public void shouldRaiseTooManyLoansException() throws TooManyLoansException {
 		//given
@@ -62,14 +61,14 @@ public class ReaderTest {
 		sut.addLoan(new Book("autor4","tytuł4"));
 		//then
 	}
-	
+
 	@Test
 	public void shouldReturnProperPenaltyValue() throws TooManyLoansException {
 		//given
 		Book firstBook = mock(Book.class);
 		when(firstBook.timeExceeded())
 			.thenReturn(5);
-		
+
 		Book secondBook = mock(Book.class);
 		when(secondBook.timeExceeded())
 			.thenReturn(3);
@@ -77,7 +76,7 @@ public class ReaderTest {
 		sut.addLoan(firstBook);
 		sut.addLoan(secondBook);
 		//then
-		assertTrue(sut.checkPenalties() == 8);	
+		assertTrue(sut.checkPenalties() == 8);
 	}
 
 	@Test
