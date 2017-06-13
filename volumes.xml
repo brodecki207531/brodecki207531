@@ -1,15 +1,16 @@
 <list>
   <Book>
-    <id>1</id>
-    <author>Tuwim</author>
-    <title>Bajki</title>
     <available>false</available>
     <date>
-      <iMillis>1435672105371</iMillis>
-      <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology-Stub" serialization="custom">
-        <org.joda.time.chrono.ISOChronology-Stub>
-          <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone-Stub"/>
-        </org.joda.time.chrono.ISOChronology-Stub>
+      <iMillis>1497350344782</iMillis>
+      <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+        <org.joda.time.chrono.ISOChronology_-Stub>
+          <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+            <org.joda.time.DateTimeZone_-Stub>
+              <string>Europe/Warsaw</string>
+            </org.joda.time.DateTimeZone_-Stub>
+          </org.joda.time.tz.CachedDateTimeZone>
+        </org.joda.time.chrono.ISOChronology_-Stub>
       </iChronology>
     </date>
     <reader>
@@ -21,47 +22,80 @@
         <Book reference="../../.."/>
       </loaned>
     </reader>
+    <id>1</id>
+    <author>Tuwim</author>
+    <title>Bajki</title>
   </Book>
   <Book>
+    <available>false</available>
+    <date>
+      <iMillis>1497352461522</iMillis>
+      <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../../Book/date/iChronology"/>
+    </date>
+    <reader>
+      <name>Maciej</name>
+      <surname>Brodecki</surname>
+      <id>1</id>
+      <penalty>0.0</penalty>
+      <loaned>
+        <Book>
+          <available>false</available>
+          <date>
+            <iMillis>1497350344782</iMillis>
+            <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../../../../../Book/date/iChronology"/>
+          </date>
+          <reader reference="../../.."/>
+          <id>1</id>
+          <author>Tuwim</author>
+          <title>Bajki</title>
+        </Book>
+        <Book reference="../../.."/>
+        <Book>
+          <available>false</available>
+          <date>
+            <iMillis>1497352469961</iMillis>
+            <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../../../../../Book/date/iChronology"/>
+          </date>
+          <reader reference="../../.."/>
+          <id>4</id>
+          <author>Ksiazka autor</author>
+          <title>ksiazka tytul</title>
+        </Book>
+      </loaned>
+    </reader>
     <id>2</id>
     <author>Brzechwa</author>
     <title>Bajkełę</title>
-    <available>true</available>
   </Book>
   <NewsPaper>
+    <available>true</available>
     <name>Wyborcza</name>
     <number>1</number>
     <id>1</id>
-    <available>true</available>
   </NewsPaper>
   <Magazine>
+    <available>true</available>
     <name>Cd-Action</name>
     <number>1</number>
     <id>1</id>
-    <available>true</available>
   </Magazine>
   <Book>
+    <available>true</available>
     <id>3</id>
     <author>Grebosz</author>
     <title>Symfonia C++</title>
-    <available>true</available>
   </Book>
   <Magazine>
+    <available>true</available>
     <name>Moda24</name>
     <number>5</number>
     <id>2</id>
-    <available>true</available>
   </Magazine>
   <NewsPaper>
+    <available>true</available>
     <name>Fakt</name>
     <number>214</number>
     <id>2</id>
-    <available>true</available>
   </NewsPaper>
-  <Book>
-    <id>4</id>
-    <author>Ksiazka autor</author>
-    <title>ksiazka tytul</title>
-    <available>true</available>
-  </Book>
+  <Book reference="../Book[2]/reader/loaned/Book[3]"/>
 </list>

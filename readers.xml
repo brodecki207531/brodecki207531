@@ -6,19 +6,45 @@
     <penalty>0.0</penalty>
     <loaned>
       <Book>
-        <id>1</id>
-        <author>Tuwim</author>
-        <title>Bajki</title>
         <available>false</available>
         <date>
-          <iMillis>1435672105343</iMillis>
-          <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology-Stub" serialization="custom">
-            <org.joda.time.chrono.ISOChronology-Stub>
-              <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone-Stub"/>
-            </org.joda.time.chrono.ISOChronology-Stub>
+          <iMillis>1497350344782</iMillis>
+          <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+            <org.joda.time.chrono.ISOChronology_-Stub>
+              <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+                <org.joda.time.DateTimeZone_-Stub>
+                  <string>Europe/Warsaw</string>
+                </org.joda.time.DateTimeZone_-Stub>
+              </org.joda.time.tz.CachedDateTimeZone>
+            </org.joda.time.chrono.ISOChronology_-Stub>
           </iChronology>
         </date>
         <reader reference="../../.."/>
+        <id>1</id>
+        <author>Tuwim</author>
+        <title>Bajki</title>
+      </Book>
+      <Book>
+        <available>false</available>
+        <date>
+          <iMillis>1497352461522</iMillis>
+          <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../../Book/date/iChronology"/>
+        </date>
+        <reader reference="../../.."/>
+        <id>2</id>
+        <author>Brzechwa</author>
+        <title>Bajkełę</title>
+      </Book>
+      <Book>
+        <available>false</available>
+        <date>
+          <iMillis>1497352469961</iMillis>
+          <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../../Book/date/iChronology"/>
+        </date>
+        <reader reference="../../.."/>
+        <id>4</id>
+        <author>Ksiazka autor</author>
+        <title>ksiazka tytul</title>
       </Book>
     </loaned>
   </Reader>
