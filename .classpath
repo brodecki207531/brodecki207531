@@ -17,10 +17,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Groarq-lap/Desktop/joda-time-2.4.jar"/>
-	<classpathentry kind="lib" path="D:/Zaawansowana Java/workspace/zaawansowana-java/Library/src/xstream.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Groarq-lap/Downloads/mockito-all-1.9.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Groarq-lap/Desktop/assertj-core-1.0.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>

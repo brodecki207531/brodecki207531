@@ -14,6 +14,7 @@ import org.joda.time.*;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
+import org.joda.time.chrono.ISOChronology;
 
 public class Library {
 	private String name;
@@ -32,13 +33,13 @@ public class Library {
 	
 	public void save() {
 		try{
-		Writer writerReaders = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("readers.xml"), "utf-8"));
+		Writer writerReaders = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("./readers.xml"), "utf-8"));
 		XStream xstream = new XStream();
 		String xml = xstream.toXML(readers);
 		writerReaders.write(xml);
 		writerReaders.close();
 
-		Writer writerVolumes = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("volumes.xml"), "utf-8"));
+		Writer writerVolumes = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("./volumes.xml"), "utf-8"));
 		xstream = new XStream();
 		xml = xstream.toXML(volumes);
 		writerVolumes.write(xml);
@@ -56,9 +57,9 @@ public class Library {
 	       xstream.alias("Book", Book.class);
 	       xstream.alias("NewsPaper", NewsPaper.class);
 	       xstream.alias("Magazine", Magazine.class);
-	       xstream.addImplicitCollection(Reader.class, "reader");
-	       xstream.addImplicitCollection(NewsPaper.class, "newspaper");
-	       xstream.addImplicitCollection(Magazine.class, "magazine");
+//	       xstream.addImplicitCollection(Reader.class, "reader");
+//	       xstream.addImplicitCollection(NewsPaper.class, "newspaper");
+//	       xstream.addImplicitCollection(Magazine.class, "magazine");
 	     
 	       List<Reader> readerList = (List<Reader>) xstream.fromXML(fileIn);
 	       for(Reader reader : readerList){
